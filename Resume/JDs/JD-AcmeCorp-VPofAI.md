@@ -1,0 +1,25 @@
+--- Captured: 2026-01-01 10:00 | Fit: Strong Fit ---
+[Source](https://www.acmecorp.com/careers/vp-ai)
+
+# VP of Artificial Intelligence — Acme Corp
+
+**Location:** Remote (US)
+**Compensation:** $250,000–$300,000 + equity
+
+## About the Role
+
+The VP of Artificial Intelligence will report directly to the CTO and own the company's end-to-end AI strategy. This is a new role created in response to strong market demand for AI-powered solutions.
+
+## Responsibilities
+
+- Define and execute the enterprise AI strategy
+- Build and lead a team of AI engineers, data scientists, and product managers
+- Partner with business units to identify and prioritize AI use cases
+- Establish AI governance, ethics, and risk management frameworks
+
+## Qualifications
+
+- 10+ years of experience in technology or management consulting
+- 3+ years leading AI or data science initiatives at scale
+- Deep understanding of large language models and generative AI
+- Excellent executive communication and stakeholder management skills

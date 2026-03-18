@@ -1,0 +1,26 @@
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+
+# ── Binary / Office files (local only — regenerable from .md sources) ─────────
+*.xlsx
+*.docx
+*.pdf
+
+# ── Python virtual environment ────────────────────────────────────────────────
+Resume/.venv/
+
+# ── SQLite databases ──────────────────────────────────────────────────────────
+*.sqlite
+
+# ── Ephemeral Claude Code runtime files ──────────────────────────────────────
+.claude/email_queue.md
+.claude/links_email_queue.md
+
+# ── Machine-specific Claude Code settings ────────────────────────────────────
+.claude/settings.local.json
+
+# ── Trash folder (Claude Code temp output) ───────────────────────────────────
+trash/
+
+# ── macOS Finder aliases (not portable) ──────────────────────────────────────
+Resume/Tailored/Employers alias

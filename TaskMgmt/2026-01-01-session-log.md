@@ -1,0 +1,22 @@
+# Session Log — 2026-01-01
+
+## Summary
+Built the `/process-job-emails` skill to automate job posting capture from Apple Mail. Processed first batch of emails and created 3 JD files.
+
+## User Prompts
+1. "Let's build a skill to process job emails from Apple Mail"
+2. "Add a delete mode that removes processed emails from my inbox"
+3. "The delete mode isn't matching emails correctly"
+
+## Actions Taken
+- Created `.claude/commands/process-job-emails.md` with test mode and delete mode
+- Debugged sender matching issue — switched from `is` to `contains` for AppleScript sender comparison
+- Processed first batch: 5 emails, created 3 JD files (2 Strong Fit, 1 Possible Fit)
+
+## Files Created/Modified
+- `.claude/commands/process-job-emails.md` (created)
+- `Resume/JDs/JD-AcmeCorp-VPofAI.md` (created)
+- `Task Board.md` (updated)
+
+## Key Decisions
+- Use `contains` not `is` for AppleScript sender matching — Mail returns full display name + address

@@ -1,6 +1,6 @@
 # <YOUR_NAME> — Master Resume
 
-*This is your source-of-truth resume. All tailored resumes are generated from this file using `/resume-tailor`.*
+*This is your source-of-truth resume. You are the only one who ever sees this. All tailored resumes are generated from this file using `/resume-tailor`.*
 
 ---
 

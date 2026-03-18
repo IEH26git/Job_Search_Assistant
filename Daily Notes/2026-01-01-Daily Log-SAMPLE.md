@@ -1,4 +1,4 @@
-# 2026-01-01 - Daily Log
+# 2026-01-01 - Daily Log <SAMPLE>
 
 ## Decisions
 - Decided to prioritize Acme Corp application over Widget Co this week — stronger fit and closer to target seniority

@@ -1,5 +1,7 @@
 # Folder Index — Templates/
 
+_This index is updated by Claude whenever you add or remove files._
+
 Reusable templates and rule files used by skills.
 
 ## Files

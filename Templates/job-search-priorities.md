@@ -43,7 +43,7 @@ Valuable but not urgent. Move to Later unless Tier 1–3 are clear.
 
 | Upstream (must be done first) | Downstream (blocked until then) |
 |:------------------------------|:--------------------------------|
-| Portfolio site live | Executive/CAIO outreach |
+| Portfolio site live | Executive outreach |
 | Study sessions complete | Target application |
 
 ---

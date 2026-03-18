@@ -1,6 +1,7 @@
 # Markdown Cheatsheet
 
 ---
+
 *A note on saving...*
 You generally do not need to use the "Save Modified Notes" command (Ctrl+S) in QOwnNotes.
 QOwnNotes is designed to automatically save your notes every 10 seconds. 

@@ -10,13 +10,13 @@ A chronological record of all changes to the personal operating system — skill
 2026-FEB                                                        2026-MAR
   │                                                                 │
   ├─ 02/09  Baseline system                                         │
-  │         (memory, task board, /start, /sync, /wrap-up)          │
+  │         (memory, task board, /start, /sync, /wrap-up)           │
   │                                                                 │
   ├─ 02/15  Daily notes + weekly summary                            │
   │                                                                 │
   ├─ 02/18  Resume automation                                       │
   │         (/resume-tailor, /convert-resume, /capability-          │
-  │          statements, md-to-docx.py)                            │
+  │          statements, md-to-docx.py)                             │
   │                                                                 │
   ├─ 02/21  Session log format redesign (/log-session)              │
   │                                                                 │
@@ -25,15 +25,15 @@ A chronological record of all changes to the personal operating system — skill
   ├─ 02/23  DOCX formatting fixes + session naming (/rename)        │
   │                                                                 │
   ├─ 02/24  Task routing architecture                               │
-  │         (Task Board triage, 3-bucket inbox model)              │
+  │         (Task Board triage, 3-bucket inbox model)               │
   │                                                                 │
-  ├─ 02/25  /process-job-emails — design + first run               │
+  ├─ 02/25  /process-job-emails — design + first run                │
   ├─ 02/26  (continued: evaluation rubric, manual review)           │
   │                                                                 │
   ├─ 02/27  Workflow docs + follow-up tracking                      │
-  │         (Job-Search-Workflow.md, Meetings/ pattern)            │
-  │                                          ┌────────────────────┤
-  │                                          │                     │
+  │         (Job-Search-Workflow.md, Meetings/ pattern)             │
+  │                                          ┌──────────────────────┤
+  │                                          │                      │
   │                                          ├─ 03/02  /draft-content skill
   │                                          │
   │                                          ├─ 03/08  /collect-links + session naming

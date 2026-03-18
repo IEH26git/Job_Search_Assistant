@@ -1,7 +1,7 @@
 # Role Search Criteria
 
 Used by `/process-job-emails` to evaluate incoming job postings.
-Customize this file to match your target roles.
+***Customize this file*** to match your target roles.
 
 ---
 

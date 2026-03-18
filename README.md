@@ -32,6 +32,16 @@ This is a **personal operating system** — a folder you open in Claude Code tha
 
 ## Setup
 
+### 0. Grab a markdown editor
+AI tools use markdown files (.MD extension) **A LOT**. You don't need a markdown editor to use this personal operating system, but when you work with Claude Code, it really helps. 
+
+    - **Windows** users: You can open .MD files in **Notepad**. 
+    - **Mac** users: You can open .MD files in **TextEdit**.
+    - **Linux** users: You can open .MD files in any text editor (nano, vim, emacs, etc.). 
+
+*If you want,** you could also find and install a markdown editor to read them. In the end, they're just text files that follow some rendering rules. I use a Mac and these are my favorites: **typewriter**, **MarkEdit**, and **QOwnNotes** 
+See the 'Markdown_Editors.md' file in the /REF folder for more information.
+
 ### 1. Clone this repo
 
 ```bash
@@ -68,6 +78,7 @@ Then run `/start` to begin.
 ---
 
 ## Folder Structure
+These are the folders created in your chosen main/root folder.
 
 ```
 .

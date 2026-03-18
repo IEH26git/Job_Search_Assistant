@@ -28,7 +28,7 @@ This system supports a structured job search with the following phases:
 
 ## Sourcing — Capturing Job Postings
 
-### From Email Digests (LinkedIn, Lensa, JobLeads, etc.)
+### From Email Digests (LinkedIn, Indeed, JobLeads, etc.)
 1. Select job digest emails in Apple Mail
 2. Run `/process-job-emails` — fetches posting URLs, evaluates against criteria, creates JD files
 3. Review `Manual-Review-YYYY-MM-DD.md` for roles that couldn't be fetched automatically
@@ -64,7 +64,7 @@ Customize criteria in `Templates/Role_Search_Criteria.md`.
 2. Run `/resume-tailor JD-Company-Role.md` — generates tailored Markdown resume
 3. Review and edit the tailored resume in `Resume/Tailored/`
 4. Run `/convert-resume Resume/Tailored/<filename>.md` — converts to DOCX
-5. Submit the DOCX to the employer
+5. Submit the DOCX to the employer (or save DOCX as a PDF before submitting)
 
 ### Optional: Capability Statements
 Run `/capability-statements JD-Company-Role.md` for first-person statements for cover letters or outreach.

@@ -17,4 +17,5 @@ Skill definition files for all Claude Code slash commands.
 | `draft-content.md` | `/draft-content [platform] [notes]` | Draft platform-specific content |
 | `log-session.md` | `/log-session [slug]` | Generate session log |
 | `extract-transcript.md` | `/extract-transcript [date]` | Generate verbatim transcript |
+| `extract-cursor-transcript.md` | `/extract-cursor-transcript [date]` | Generate Cursor verbatim transcript |
 | `for-the-record.md` | `/for-the-record` | Save conversation turns to file |

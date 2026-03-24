@@ -56,7 +56,7 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-The setup script will ask for the full path to this folder and replace `<WORKSPACE_PATH>` throughout all skill files. Run this once after cloning.
+The setup script will ask for the full path to this folder and replace `/Users/ianheiman/Desktop/PublicTest` throughout all skill files. Run this once after cloning.
 
 ### 3. Install Python dependencies
 
@@ -120,7 +120,10 @@ These are the folders created in your chosen main/root folder.
 | `/draft-content [platform] [notes]` | Drafts LinkedIn, Substack, or blog content |
 | `/log-session [slug]` | Generates structured session log |
 | `/extract-transcript [date]` | Produces verbatim turn-by-turn transcript from Claude Code session logs |
+| `/extract-cursor-transcript [date]` | Produces verbatim turn-by-turn transcript from Cursor agent session logs |
 | `/for-the-record` | Saves recent conversation turns to a dated Markdown file |
+
+Alias note: use `/extract-transcript` for Claude Code logs and `/extract-cursor-transcript` for Cursor logs.
 
 ---
 

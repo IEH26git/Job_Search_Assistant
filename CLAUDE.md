@@ -6,6 +6,7 @@ This is a personal operating system. Work from this directory.
 - Run `/start` to begin work
 - Run `/sync` mid-day to refresh memory
 - Run `/wrap-up` at end of day
+- Transcript note: use `/extract-transcript` for Claude Code logs and `/extract-cursor-transcript` for Cursor logs.
 
 ## Key Files
 - Memory: `.claude/memory.md` (read this for current context)

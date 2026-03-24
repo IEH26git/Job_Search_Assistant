@@ -12,7 +12,7 @@ Generate first-person capability statements from a job description, reusing as m
 
 ## Source Files
 
-- **JDs Folder**: `<WORKSPACE_PATH>/Resume/JDs/`
+- **JDs Folder**: `/Users/ianheiman/Desktop/PublicTest/Resume/JDs/`
 - **Output**: Same folder as the input JD, with `-capabilities` appended to the filename
 
 ## Output Naming Convention
@@ -92,7 +92,7 @@ Generated: [today's date]
 Construct the output filename by inserting `-capabilities` before `.md` in the input filename.
 
 Write the file to the same directory as the input JD:
-`<WORKSPACE_PATH>/Resume/JDs/<original-name>-capabilities.md`
+`/Users/ianheiman/Desktop/PublicTest/Resume/JDs/<original-name>-capabilities.md`
 
 ### Step 7: Confirm
 

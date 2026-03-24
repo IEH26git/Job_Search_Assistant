@@ -10,9 +10,9 @@ Convert a tailored resume Markdown file to a formatted Word document using `md-t
 
 ## Source Files
 
-- **Script**: `<WORKSPACE_PATH>/Resume/md-to-docx.py`
-- **Python**: `<WORKSPACE_PATH>/Resume/.venv/bin/python`
-- **Tailored folder**: `<WORKSPACE_PATH>/Resume/Tailored/`
+- **Script**: `/Users/ianheiman/Desktop/PublicTest/Resume/md-to-docx.py`
+- **Python**: `/Users/ianheiman/Desktop/PublicTest/Resume/.venv/bin/python`
+- **Tailored folder**: `/Users/ianheiman/Desktop/PublicTest/Resume/Tailored/`
 
 ---
 
@@ -20,7 +20,7 @@ Convert a tailored resume Markdown file to a formatted Word document using `md-t
 
 ### Step 1: Get the file path
 
-If a file path argument was provided, use it directly. Resolve relative paths against the project root (`<WORKSPACE_PATH>/`).
+If a file path argument was provided, use it directly. Resolve relative paths against the project root (`/Users/ianheiman/Desktop/PublicTest/`).
 
 If no argument was provided, list the `.md` files in `Resume/Tailored/` and ask Ian which one to convert.
 
@@ -29,8 +29,8 @@ If no argument was provided, list the `.md` files in `Resume/Tailored/` and ask 
 Run:
 
 ```
-<WORKSPACE_PATH>/Resume/.venv/bin/python \
-  <WORKSPACE_PATH>/Resume/md-to-docx.py \
+/Users/ianheiman/Desktop/PublicTest/Resume/.venv/bin/python \
+  /Users/ianheiman/Desktop/PublicTest/Resume/md-to-docx.py \
   "<absolute path to .md file>"
 ```
 

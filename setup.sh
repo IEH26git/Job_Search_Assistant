@@ -22,10 +22,10 @@ echo ""
 echo "Configuring workspace path: $WORKSPACE_PATH"
 echo ""
 
-# Find all text files and replace <WORKSPACE_PATH> with the actual path
+# Find all text files and replace /Users/ianheiman/Desktop/PublicTest with the actual path
 find "$WORKSPACE_PATH" -type f \( -name "*.md" -o -name "*.sh" -o -name "*.py" -o -name "*.json" \) | while read -r file; do
-    if grep -q "<WORKSPACE_PATH>" "$file" 2>/dev/null; then
-        sed -i '' "s|<WORKSPACE_PATH>|$WORKSPACE_PATH|g" "$file"
+    if grep -q "/Users/ianheiman/Desktop/PublicTest" "$file" 2>/dev/null; then
+        sed -i '' "s|/Users/ianheiman/Desktop/PublicTest|$WORKSPACE_PATH|g" "$file"
         echo "  Configured: ${file#$WORKSPACE_PATH/}"
     fi
 done

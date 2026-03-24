@@ -11,9 +11,9 @@ Generate a polished content draft for a specific platform from Ian's rough notes
 
 ## Source Files
 
-- **Content Rules**: `<WORKSPACE_PATH>/Templates/content-rules.md`
-- **Master Resume**: `<WORKSPACE_PATH>/Resume/master-resume.md`
-- **Output Folder**: `<WORKSPACE_PATH>/Content/`
+- **Content Rules**: `/Users/ianheiman/Desktop/PublicTest/Templates/content-rules.md`
+- **Master Resume**: `/Users/ianheiman/Desktop/PublicTest/Resume/master-resume.md`
+- **Output Folder**: `/Users/ianheiman/Desktop/PublicTest/Content/`
 
 ---
 
@@ -61,7 +61,7 @@ Output filename: `YYYY-MM-DD-[platform]-[slug].md`
 ### Step 6: Save and display
 
 Write the draft to:
-`<WORKSPACE_PATH>/Content/<filename>.md`
+`/Users/ianheiman/Desktop/PublicTest/Content/<filename>.md`
 
 Display the full draft inline for review.
 

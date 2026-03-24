@@ -24,3 +24,7 @@ trash/
 
 # ── macOS Finder aliases (not portable) ──────────────────────────────────────
 Resume/Tailored/Employers alias
+
+# ── QOwnNotes ────────────────────────────────────────────────────────────────
+.qownnotes*
+*.qownnotes*

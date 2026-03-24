@@ -4,7 +4,7 @@
 set -euo pipefail
 
 PROJECTS_DIR="$HOME/.claude/projects/-Users-<username>-Documents--QON-Tasks"
-OUTPUT_DIR="<WORKSPACE_PATH>/TaskMgmt"
+OUTPUT_DIR="/Users/ianheiman/Desktop/PublicTest/TaskMgmt"
 
 usage() {
     echo "Usage: $0 YYYY-MM-DD"

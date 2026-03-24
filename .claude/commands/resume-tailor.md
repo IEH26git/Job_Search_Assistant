@@ -11,10 +11,10 @@ Tailor Ian's master resume to a specific job description.
 
 ## Source Files
 
-- **Master Resume**: `<WORKSPACE_PATH>/Resume/master-resume.md`
-- **Tailoring Rules**: `<WORKSPACE_PATH>/Resume/resume-rules.md`
-- **JDs Folder**: `<WORKSPACE_PATH>/Resume/JDs/`
-- **Output Folder**: `<WORKSPACE_PATH>/Resume/Tailored/`
+- **Master Resume**: `/Users/ianheiman/Desktop/PublicTest/Resume/master-resume.md`
+- **Tailoring Rules**: `/Users/ianheiman/Desktop/PublicTest/Resume/resume-rules.md`
+- **JDs Folder**: `/Users/ianheiman/Desktop/PublicTest/Resume/JDs/`
+- **Output Folder**: `/Users/ianheiman/Desktop/PublicTest/Resume/Tailored/`
 
 ## Output Naming Convention
 
@@ -72,7 +72,7 @@ Using the master resume, tailoring rules, and job description:
 ### Step 5: Save output
 
 Write the tailored resume to:
-`<WORKSPACE_PATH>/Resume/Tailored/<filename>.md`
+`/Users/ianheiman/Desktop/PublicTest/Resume/Tailored/<filename>.md`
 
 ### Step 6: Confirm
 

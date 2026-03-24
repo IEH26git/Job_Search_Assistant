@@ -14,10 +14,10 @@ Process job emails selected in Apple Mail. In test mode (default), fetches posti
 
 ## Key File Paths
 
-- **Role Criteria**: `<WORKSPACE_PATH>/Templates/Role_Search_Criteria.md`
-- **JDs Folder**: `<WORKSPACE_PATH>/Resume/JDs/`
-- **Task Board**: `<WORKSPACE_PATH>/Task Board.md`
-- **Email Queue**: `<WORKSPACE_PATH>/.claude/email_queue.md`
+- **Role Criteria**: `/Users/ianheiman/Desktop/PublicTest/Templates/Role_Search_Criteria.md`
+- **JDs Folder**: `/Users/ianheiman/Desktop/PublicTest/Resume/JDs/`
+- **Task Board**: `/Users/ianheiman/Desktop/PublicTest/Task Board.md`
+- **Email Queue**: `/Users/ianheiman/Desktop/PublicTest/.claude/email_queue.md`
 
 ---
 
@@ -34,7 +34,7 @@ Check the argument passed to this command.
 
 ### Step 1: Read role criteria
 
-Read `<WORKSPACE_PATH>/Templates/Role_Search_Criteria.md`.
+Read `/Users/ianheiman/Desktop/PublicTest/Templates/Role_Search_Criteria.md`.
 
 If the file does not exist or contains only placeholder content, stop and tell Ian:
 > "Please populate `Templates/Role_Search_Criteria.md` before running /process-job-emails."
@@ -127,7 +127,7 @@ For each qualifying posting:
    - Use short forms without spaces (e.g., `JD-Acme-VPofAI.md`, `JD-CapOne-DirGenAI.md`)
    - If a file with that exact name already exists in `Resume/JDs/`, append the date: `JD-Acme-VPofAI-2026-02-25.md`
 
-2. Write the file to `<WORKSPACE_PATH>/Resume/JDs/<filename>` with this format:
+2. Write the file to `/Users/ianheiman/Desktop/PublicTest/Resume/JDs/<filename>` with this format:
 
 ```
 --- Captured: YYYY-MM-DD HH:MM | Fit: [Strong Fit / Possible Fit] ---
@@ -158,7 +158,7 @@ For each notable role, capture:
 
 **CSV format** (use when 8+ roles):
 
-Write the file to `<WORKSPACE_PATH>/Resume/JDs/Manual-Review-YYYY-MM-DD.csv` with these columns:
+Write the file to `/Users/ianheiman/Desktop/PublicTest/Resume/JDs/Manual-Review-YYYY-MM-DD.csv` with these columns:
 
 ```
 Employer,Job Title,Location,Salary,Source,URL,Find It
@@ -168,7 +168,7 @@ One row per role. Quote any field that contains a comma. For fields containing d
 
 **Markdown format** (use when 7 or fewer roles):
 
-Write the file to `<WORKSPACE_PATH>/Resume/JDs/Manual-Review-YYYY-MM-DD.md` using this format:
+Write the file to `/Users/ianheiman/Desktop/PublicTest/Resume/JDs/Manual-Review-YYYY-MM-DD.md` using this format:
 
 ```markdown
 # Manual Review — YYYY-MM-DD
@@ -193,7 +193,7 @@ If no notable roles were identified, skip this step silently — do not create a
 
 If a Manual Review file already exists for today's date (`.md` or `.csv`), append new entries to it rather than overwriting. Match the existing file's format regardless of the count rule.
 
-**6c. Save the email queue.** Write (or overwrite) `<WORKSPACE_PATH>/.claude/email_queue.md` with one row per processed email — all emails from this run, not just those that created JD files.
+**6c. Save the email queue.** Write (or overwrite) `/Users/ianheiman/Desktop/PublicTest/.claude/email_queue.md` with one row per processed email — all emails from this run, not just those that created JD files.
 
 Format the `Date Received` column as `YYYY-MM-DD` (extract from the AppleScript date string — e.g., "Wednesday, February 25, 2026 at 1:26:53 PM" → `2026-02-25`). This format is used by the delete step to filter by year, month, and day.
 
@@ -211,7 +211,7 @@ Emails processed in test mode. Run `/process-job-emails delete` to delete these 
 
 This queue will be overwritten on the next test-mode run. Run delete mode before processing a new batch if you want both batches deleted.
 
-**6d. Update the Task Board.** Read `<WORKSPACE_PATH>/Task Board.md` and append one line to the **Inbox** section:
+**6d. Update the Task Board.** Read `/Users/ianheiman/Desktop/PublicTest/Task Board.md` and append one line to the **Inbox** section:
 
 ```
 - [YYYY-MM-DD] Processed N email(s): created M JD(s) — JD-X.md, JD-Y.md. Best fit(s): JD-X.md. [Z roles flagged for manual review → Manual-Review-YYYY-MM-DD.md] [W skipped: reason summary]
@@ -239,7 +239,7 @@ Rules:
 
 ### Step 7: Read the email queue
 
-Read `<WORKSPACE_PATH>/.claude/email_queue.md`.
+Read `/Users/ianheiman/Desktop/PublicTest/.claude/email_queue.md`.
 
 If the file does not exist, is empty, or the queue table contains no data rows, stop and tell Ian:
 > "No email queue found. Run `/process-job-emails` first to process a batch of emails and build the deletion queue."
@@ -281,7 +281,7 @@ Record whether each message was found and deleted (count > 0) or not found (coun
 
 ### Step 9: Clear the queue and report
 
-**9a.** Overwrite `<WORKSPACE_PATH>/.claude/email_queue.md` with:
+**9a.** Overwrite `/Users/ianheiman/Desktop/PublicTest/.claude/email_queue.md` with:
 
 ```markdown
 # Email Queue

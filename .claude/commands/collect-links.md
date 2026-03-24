@@ -14,8 +14,8 @@ Extract links from emails selected in Apple Mail, fetch page titles and descript
 
 ## Key File Paths
 
-- **Links File**: `<WORKSPACE_PATH>/REF/Links.md`
-- **Email Queue**: `<WORKSPACE_PATH>/.claude/links_email_queue.md`
+- **Links File**: `/Users/ianheiman/Desktop/PublicTest/REF/Links.md`
+- **Email Queue**: `/Users/ianheiman/Desktop/PublicTest/.claude/links_email_queue.md`
 
 ---
 
@@ -87,7 +87,7 @@ If an email yields no usable URLs after filtering, note it and move on.
 
 ### Step 4: Load existing links file and deduplicate
 
-Read `<WORKSPACE_PATH>/REF/Links.md` if it exists.
+Read `/Users/ianheiman/Desktop/PublicTest/REF/Links.md` if it exists.
 
 Extract all URLs already present in the file. Any URL found in the existing file should be **skipped silently** — do not add it again, do not mention it in the report.
 
@@ -112,7 +112,7 @@ Do not stop the run for any individual fetch failure.
 
 ### Step 6: Append new entries to Links.md
 
-Read the current contents of `<WORKSPACE_PATH>/REF/Links.md` (or start with an empty file if it doesn't exist).
+Read the current contents of `/Users/ianheiman/Desktop/PublicTest/REF/Links.md` (or start with an empty file if it doesn't exist).
 
 For each new URL, append one entry in this format:
 
@@ -149,7 +149,7 @@ If there are no new entries to add (all URLs were duplicates or all emails had n
 
 ### Step 7: Save the email queue and report
 
-**7a. Save the email queue.** Write (or overwrite) `<WORKSPACE_PATH>/.claude/links_email_queue.md` with one row per processed email — all emails from this run.
+**7a. Save the email queue.** Write (or overwrite) `/Users/ianheiman/Desktop/PublicTest/.claude/links_email_queue.md` with one row per processed email — all emails from this run.
 
 Format the `Date Received` column as `YYYY-MM-DD` (extract from the AppleScript date string — e.g., "Wednesday, March 9, 2026 at 1:26:53 PM" → `2026-03-09`).
 
@@ -181,7 +181,7 @@ This queue will be overwritten on the next collect-mode run. Run delete mode bef
 
 ### Step 8: Read the email queue
 
-Read `<WORKSPACE_PATH>/.claude/links_email_queue.md`.
+Read `/Users/ianheiman/Desktop/PublicTest/.claude/links_email_queue.md`.
 
 If the file does not exist, is empty, or the queue table contains no data rows, stop and tell Ian:
 > "No email queue found. Run `/collect-links` first to process a batch of emails and build the deletion queue."
@@ -227,7 +227,7 @@ Record whether each message was found and deleted (count > 0) or not found (coun
 
 ### Step 10: Clear the queue and report
 
-**10a.** Overwrite `<WORKSPACE_PATH>/.claude/links_email_queue.md` with:
+**10a.** Overwrite `/Users/ianheiman/Desktop/PublicTest/.claude/links_email_queue.md` with:
 
 ```markdown
 # Links Email Queue

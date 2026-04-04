@@ -38,11 +38,15 @@ A chronological record of all changes to the personal operating system — skill
   │                                          │
   │                                          ├─ 03/08  /collect-links + session naming
   │                                          │
-  │                                          └─ 03/18  GitHub integration
+  │                                          ├─ 03/18  GitHub integration
   │                                                    + permissions
   │                                                    + bug fixes (5 items)
   │                                                    + /for-the-record skill
   │                                                    + Agent-Change-Log.md
+  │
+  │                                          └─ 04/04  Deployment docs + setup improvements
+  │                                                    (README overhaul, setup.sh Linux fix,
+  │                                                     SAMPLE file headers, notes.sqlite removed)
 ```
 
 ---
@@ -176,6 +180,18 @@ A chronological record of all changes to the personal operating system — skill
   - Fixed osascript heredoc syntax: use `<<EOF` not `<<'EOF'` (quoted form triggers security prompt)
 - **`/for-the-record` skill**: interactively saves conversation turns to dated `.md` files
 - **`Agent-Change-Log.md`**: created this file
+
+---
+
+### 2026-04-04 — Deployment Documentation + Setup Improvements
+
+**Type:** Documentation + Bug Fix
+**Scope:** `README.md`, `setup.sh`, SAMPLE files
+
+- **`README.md`**: Added Claude Code install instructions (npm, Node.js prerequisite, auth step); expanded Windows section into two explicit paths (WSL recommended, native Windows via Git Bash); added "What to Do Yourself vs. What to Ask Claude" section with example conversations; reframed Apple Mail-only skills to direct users to ask Claude to adapt them; added "seed your memory" step before first run
+- **`setup.sh`**: Fixed `sed -i ''` (macOS-only syntax) — now detects OS and uses `sed -i` on Linux
+- **SAMPLE files**: Added instructional header to all six SAMPLE files identifying which template or skill each is based on and when to delete it
+- **`notes.sqlite`**: Removed personal data file from repo root (was untracked)
 
 ---
 

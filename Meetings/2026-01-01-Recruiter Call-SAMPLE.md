@@ -1,3 +1,7 @@
+> **Sample file:** This illustrates what a completed Meeting Note looks like, based on `Templates/Meeting Note Template.md`. Once you have created your first meeting note, you may delete this file.
+
+---
+
 ---
 date: 2026-01-01
 attendees: <YOUR_NAME>, Jane Smith (Search Firm)

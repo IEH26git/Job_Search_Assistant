@@ -1,3 +1,7 @@
+> **Sample file:** This illustrates what a completed Daily Log looks like, based on `Templates/Daily Note Template.md`. Once you have created your first daily log (run `/start` to generate one automatically), you may delete this file.
+
+---
+
 # 2026-01-01 - Daily Log <SAMPLE>
 
 ## Decisions

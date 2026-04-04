@@ -1,3 +1,7 @@
+> **Sample file:** This illustrates what a completed Weekly Summary looks like, based on `Templates/Weekly Summary Template.md`. Once you have created your first weekly summary (run `/wrap-up` on a Friday to generate one automatically), you may delete this file.
+
+---
+
 # Week of 2026-01-05
 
 ## Accomplishments

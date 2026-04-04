@@ -25,7 +25,11 @@ echo ""
 # Find all text files and replace /Users/ianheiman/Desktop/PublicTest with the actual path
 find "$WORKSPACE_PATH" -type f \( -name "*.md" -o -name "*.sh" -o -name "*.py" -o -name "*.json" \) | while read -r file; do
     if grep -q "/Users/ianheiman/Desktop/PublicTest" "$file" 2>/dev/null; then
-        sed -i '' "s|/Users/ianheiman/Desktop/PublicTest|$WORKSPACE_PATH|g" "$file"
+        if [[ "$OSTYPE" == "darwin"* ]]; then
+            sed -i '' "s|/Users/ianheiman/Desktop/PublicTest|$WORKSPACE_PATH|g" "$file"
+        else
+            sed -i "s|/Users/ianheiman/Desktop/PublicTest|$WORKSPACE_PATH|g" "$file"
+        fi
         echo "  Configured: ${file#$WORKSPACE_PATH/}"
     fi
 done

@@ -1,53 +1,27 @@
-# Personal Operating System — Claude Code
-
-A personal productivity system built on [Claude Code](https://claude.ai/code) that automates your daily workflow, job search, and content creation through a suite of slash commands.
+# Job_Search_Assistant using Claude Code
+This personal productivity/operating system is built with and runs in [Claude Code](https://claude.ai/code). That means you have amazing capabilities available to automate your daily workflow, job search activities, and content creation while you learn about other things that Claude Code can do.
 
 ---
 
 ## What This Is
+This **system** (also known as an *"orchestrating agent"*) runs in a folder you open in Claude Code. Doing so allows you to use a structured daily workflow, with persistent memory, and a library of custom skills. Everything is plain Markdown files that you can read, edit, and version-control.
 
-This is a **personal operating system** — a folder you open in Claude Code that gives you a structured daily workflow, persistent memory, and a library of custom skills. Everything is plain Markdown files that you can read, edit, and version-control.
-
-**Core daily loop:**
+**Core daily commands loop:**
 ```
 /start   →   /sync   →   /wrap-up
 ```
 
 ---
 
-## Prerequisites
+## Before you begin setup
 
-- **[Claude Pro](https://claude.ai) or higher** — required for Claude Code CLI access
-- **[Claude Code CLI](https://claude.ai/code)** — the command-line interface this system runs on (install instructions below)
-- **Node.js 18+** — required to install Claude Code
-- **Python 3** — for `/convert-resume` (resume → DOCX conversion)
-- **`python-docx`** — Python library (installed in setup below)
-- **macOS + Apple Mail** — used by `/process-job-emails` and `/collect-links` as shipped; if you're on a different platform or email client, ask Claude to adapt those skills to your environment (see [What to Ask Claude to Do](#what-to-ask-claude-to-do))
-
-### Installing Claude Code
-
-Claude Code runs in your terminal. Install it once with npm:
-
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-If you don't have Node.js, install it from [nodejs.org](https://nodejs.org) (LTS version recommended) first.
-
-After installing, log in:
-
-```bash
-claude
-```
-
-This opens a browser window to authenticate with your Anthropic account. You need a **Claude Pro subscription or higher** — Claude Code is not available on the free tier.
-
-#### Windows users — choose one path (you don't need both)
-
+### Options for use
+- **macOS + Apple Mail** — used by `/process-job-emails` and `/collect-links` as shipped.
+   - If you're on a different platform or email client, ask Claude to adapt those skills to your environment (see **[What to Ask Claude to Do]**(#what-to-ask-claude-to-do))
+   
+- **Windows users** — choose one of the following paths (you don't need both)
 **Path A: WSL — Recommended**
-
-WSL gives you a full Linux environment inside Windows. Most developer tools assume Linux or macOS, so this is the smoother long-term choice and what this guide assumes when it says "Linux."
-
+Installing WSL gives you a full Linux environment inside Windows. Do this:
 1. Open **PowerShell as Administrator** and run:
    ```powershell
    wsl --install
@@ -57,45 +31,39 @@ WSL gives you a full Linux environment inside Windows. Most developer tools assu
 4. From inside the Ubuntu terminal, continue with the rest of this guide exactly as written.
 
 **Path B: Native Windows (no WSL)**
-
 If you prefer to stay in Windows without WSL:
-
 1. Install **Node.js** from [nodejs.org](https://nodejs.org) (Windows LTS installer).
 2. Install **Git for Windows** from [git-scm.com](https://git-scm.com) — this also installs **Git Bash**, which you need to run `setup.sh`.
 3. Run all terminal commands in **Git Bash** (not PowerShell or cmd.exe).
 4. When installing Python dependencies (Step 3 below), use `.venv\Scripts\pip` instead of `.venv/bin/pip`.
 
+## Required for use
+- **[Claude Pro](https://claude.ai) license or higher** — required for Claude Code CLI access (sign up before installing Claude Code)
+- **[Claude Code CLI](https://claude.ai/code)** — the command-line interface this system runs on (install instructions below)
+- **Node.js 18+** — required to install Claude Code (install instructions below)
+- **Python 3** — for `/convert-resume` (resume → DOCX conversion // install instructions below)
+- **`python-docx`** — Python library (installed via setup script in a step below)
+
 ---
 
-## Setup
-
-### 0. Grab a markdown editor
-AI tools use markdown files (.MD extension) **A LOT**. You don't need a markdown editor to use this personal operating system, but when you work with Claude Code, it really helps. 
-
-    - **Windows** users: You can open .MD files in **Notepad**. 
-    - **Mac** users: You can open .MD files in **TextEdit**.
-    - **Linux** users: You can open .MD files in any text editor (nano, vim, emacs, etc.). 
-
-*If you want,* you could also find and install a markdown editor to read them. In the end, they're just text files that follow some rendering rules. I use a Mac and these are my favorites: **typewriter**, **MarkEdit**, and **QOwnNotes** 
-See the 'Markdown_Editors.md' file in the /REF folder for more information.
-
+## Setup the system/agent
 ### 1. Clone this repo
-
+Enter the following command in your terminal:
 ```bash
-git clone https://github.com/<username>/<repo-name> ~/Documents/my-personal-os
-cd ~/Documents/my-personal-os
+git clone https://github.com/IEH26git/Job_Search_Assistant <~/Documents/my-personal-os>
+cd <~/Documents/my-personal-os>
 ```
+**IMPORTANT** - "<~/Documents/my-personal-os>" is a placeholder (within angle brackets) for the path for the folder you have chosen in which to run this system (i.e., [Your-Chosen-Folder]). Replace the placeholder for [Your-Chosen-Folder] in the command above with the actual path for [Your-Chosen-Folder].
 
 ### 2. Run setup
-
-> **Do this before opening Claude Code.** The skill files contain hardcoded paths that must be updated to match your machine.
+> **Enter the following commands in your terminal before opening Claude Code.** The skill files contain hardcoded paths that must be updated to match your machine's environment.
 
 ```bash
 chmod +x setup.sh
 ./setup.sh
 ```
 
-The setup script will ask for the full path to this folder and replace the original author's path throughout all skill files. Run this once after cloning.
+The setup script will ask for the full path to [Your-Chosen-Folder] and replace the original author's path throughout all skill files. Run this once after cloning.
 
 ### 3. Install Python dependencies
 
@@ -108,7 +76,6 @@ cd ..
 ```
 
 ### 4. Customize your templates
-
 Before first run, fill in a few files so the agent has context about you:
 
 | File | What to add |
@@ -121,32 +88,50 @@ Before first run, fill in a few files so the agent has context about you:
 
 You don't need to fill everything in before starting — you can add context as you go. But at minimum, seed `.claude/memory.md` with what you're working on right now.
 
-### 5. Open in Claude Code
+# Install Claude Code
+Install Claude Code by entering the following command in your terminal (any command line interface (CLI)):
 
 ```bash
-cd ~/Documents/my-personal-os   # or wherever you cloned it
+npm install -g @anthropic-ai/claude-code
+```
+
+If you run that 'npm' command and get an error, it may be because you don't have Node.js installed. Install it from [nodejs.org](https://nodejs.org) (LTS version recommended) and then try the 'npm install' command again.
+
+### 5. Open Claude Code
+Enter the following commands in your terminal:
+```bash
+cd ~/Documents/my-personal-os   # changing your directory/folder to wherever you cloned the repo ([Your-Chosen-Folder])
 claude
 ```
 
-Claude Code opens an interactive chat in your terminal. This is where you type commands.
+The first time you open Claude Code, you will be guided to open a browser to authenticate with your Anthropic account. You need a **Claude Pro subscription or higher.** 
+
+Once logged in (authenticated), Claude Code opens an interactive chat in your terminal. This is where you type commands.
 
 ### 6. Run `/start`
-
 In the Claude Code chat prompt, type:
-
 ```
 /start
 ```
 
-This is a **slash command** — a shortcut that triggers a pre-written skill. Claude Code reads the skill definition from `.claude/commands/start.md` and executes it. You can see all available commands by typing `/` and browsing the list, or by looking at the Skills table below.
+This is an example of a **slash command** — a shortcut that triggers a pre-written skill. Claude Code reads the skill definition from `.claude/commands/start.md` and executes it. You can see all available commands by typing `/` and browsing the list, or by looking at the Skills table below.
 
 > **How slash commands work:** Every `.md` file in `.claude/commands/` becomes a `/command` you can call by name. The file describes what Claude should do — read files, ask questions, write output. You can edit any skill or create new ones just by adding a Markdown file.
+
+### 7. Grab a markdown editor
+AI tools use markdown files (.MD extension) **A LOT**. You don't need a markdown editor to use this system, but when you work with Claude Code, it really helps. 
+
+    - **Windows users:** You can open .MD files in **Notepad**. 
+    - **Mac users:** You can open .MD files in **TextEdit**.
+    - **Linux users:** You can open .MD files in any text editor (nano, vim, emacs, etc.). 
+
+*If you want,* you could also find and install a markdown editor to read them. In the end, they're just text files that follow some format rendering rules. The author uses a Mac and these are his favorites: **typewriter**, **MarkEdit**, and **QOwnNotes** 
+See the 'Markdown_Editors.md' file in the REF/ folder for more information.
 
 ---
 
 ## Folder Structure
 These are the folders created in your chosen main/root folder.
-
 ```
 .
 ├── .claude/
@@ -190,16 +175,14 @@ These are the folders created in your chosen main/root folder.
 | `/extract-cursor-transcript [date]` | Produces verbatim turn-by-turn transcript from Cursor agent session logs |
 | `/for-the-record` | Saves recent conversation turns to a dated Markdown file |
 
-Alias note: use `/extract-transcript` for Claude Code logs and `/extract-cursor-transcript` for Cursor logs.
+Alias note: use `/extract-transcript` for Claude Code logs and `/extract-cursor-transcript` for Cursor logs (if you use Cursor as an IDE).
 
 ---
 
 ## What to Do Yourself vs. What to Ask Claude
-
 Some tasks require you to act directly in your terminal or editor — Claude can't do these for you. Others are best delegated to Claude from inside the system once it's running.
 
 ### Do these yourself
-
 These are one-time setup steps that happen outside the agent:
 
 | Task | How |
@@ -212,29 +195,24 @@ These are one-time setup steps that happen outside the agent:
 | Open Claude Code | `claude` in your terminal from the repo folder |
 
 ### What to Ask Claude to Do
-
 Once you're inside Claude Code, most configuration and customization tasks can be handed off. Skill files are plain Markdown — Claude can read and rewrite them just like any other file.
 
 **Adapting built-in skills to your environment:**
-
 > "I use Gmail instead of Apple Mail. Can you rewrite `/process-job-emails` to use the Gmail API instead of AppleScript?"
 
 > "I'm on Windows and `/collect-links` uses AppleScript. Can you replace that with a version that reads emails from an `.eml` file I paste in?"
 
 **Creating new skills:**
-
 > "Create a new `/weekly-review` command that reads my last 5 daily notes and summarizes what I accomplished, what I didn't finish, and what to carry forward."
 
 > "Add a `/standup` command that reads today's task board and drafts a 3-bullet standup message."
 
 **Changing how existing skills behave:**
-
 > "Update `/draft-content` so it always writes in a more casual, first-person tone and never uses bullet points."
 
 > "Add a step to `/wrap-up` that asks me what I want to focus on tomorrow before it closes out."
 
 **Seeding and updating your context:**
-
 > "Read my notes from today and update my memory file with any new open threads or decisions."
 
 > "I just accepted a job offer. Update the progress log and memory to reflect that."
@@ -244,7 +222,6 @@ The key insight: everything the agent knows and does is in plain text files you 
 ---
 
 ## Customization
-
 All skills are plain Markdown files you can read and edit directly. To create a new command, add a `.md` file to `.claude/commands/` — it becomes available immediately as `/filename`.
 
 Key files to personalize:

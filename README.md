@@ -15,6 +15,7 @@ This **system** (also known as an *"orchestrating agent"*) runs in a folder you 
    - If you're on a different platform or email client, ask Claude to adapt those skills to your environment (see **[What to Ask Claude to Do]**(#what-to-ask-claude-to-do))
    
 - **Windows users** — choose one of the following paths (you don't need both)
+  
 **Path A: WSL** *(Recommended)*
 Installing WSL gives you a full Linux environment inside Windows. Do this:
 1. Open **PowerShell as Administrator** and run:

@@ -36,7 +36,7 @@ Check the argument passed to this command.
 
 Read `/Users/ianheiman/Desktop/PublicTest/Templates/Role_Search_Criteria.md`.
 
-If the file does not exist or contains only placeholder content, stop and tell Ian:
+If the file does not exist or contains only placeholder content, stop and tell the user:
 > "Please populate `Templates/Role_Search_Criteria.md` before running /process-job-emails."
 
 Hold this criteria in memory for use in Step 5.
@@ -72,10 +72,10 @@ Parse the output into a list of messages. Each message has:
 - `Date` — text on the "Date:" line
 - `Body` — everything between `---BODY_START---` and `---MESSAGE_END---`
 
-If the result is empty (no messages selected or Mail is not running), stop and tell Ian:
+If the result is empty (no messages selected or Mail is not running), stop and tell the user:
 > "No emails are selected in Apple Mail. Please select one or more emails in your Exchange Inbox and run this command again. Make sure Mail is open and use Cmd+Tab to switch to Claude Code without clicking away from your selection."
 
-Otherwise, tell Ian: "Found N selected email(s). Processing..."
+Otherwise, tell the user: "Found N selected email(s). Processing..."
 
 ### Step 4: Extract URLs and fetch job postings
 
@@ -224,7 +224,7 @@ Rules:
 - Summarize skipped emails briefly (e.g., "2 skipped: fetch failed").
 - Append inside the Inbox section without disturbing any other content.
 
-**6e. Report to Ian.** Tell the user:
+**6e. Report to the user.** Tell the user:
 - Total emails processed
 - For each email: subject, company/role extracted (or skip reason), fit score, and JD filename if created
 - Total JDs created and their filenames
@@ -241,7 +241,7 @@ Rules:
 
 Read `/Users/ianheiman/Desktop/PublicTest/.claude/email_queue.md`.
 
-If the file does not exist, is empty, or the queue table contains no data rows, stop and tell Ian:
+If the file does not exist, is empty, or the queue table contains no data rows, stop and tell the user:
 > "No email queue found. Run `/process-job-emails` first to process a batch of emails and build the deletion queue."
 
 Parse the queue table to get a list of `{subject, sender, date}` triples. The `Date Received` column is in `YYYY-MM-DD` format — parse it into numeric year, month (as AppleScript month constant, e.g., `February`), and day for use in the deletion filter. Tell the user: "Found N email(s) in queue. Proceeding with deletion..."
@@ -289,7 +289,7 @@ Record whether each message was found and deleted (count > 0) or not found (coun
 _Empty — last cleared: YYYY-MM-DD_
 ```
 
-**9b.** Report to Ian:
+**9b.** Report to the user:
 - Total emails targeted for deletion
 - How many were found and deleted (moved to Deleted Items in Exchange)
 - How many were not found (already deleted, moved, or subject/sender mismatch)
@@ -300,8 +300,8 @@ _Empty — last cleared: YYYY-MM-DD_
 ## Notes
 
 - **Heredoc syntax**: When constructing `osascript` Bash calls, always use `<<EOF` (unquoted), NOT `<<'EOF'`. The single-quoted form triggers a Claude Code security warning ("quoted characters in flag names") that prompts the user for confirmation. Since the AppleScript contains no shell variables, unquoted EOF is safe and avoids the interruption.
-- **Mail must be open** for AppleScript to work. If osascript returns an error about Mail not running, tell Ian to open Mail and try again.
-- **Deletion moves to Deleted Items**, not permanent erasure. Ian can review the Exchange `Deleted Items` folder before emptying it.
+- **Mail must be open** for AppleScript to work. If osascript returns an error about Mail not running, tell the user to open Mail and try again.
+- **Deletion moves to Deleted Items**, not permanent erasure. The user can review the Exchange `Deleted Items` folder before emptying it.
 - **Subject matching is exact.** If an email subject has been modified (e.g., a mail rule prepended text), it will not match the stored subject. The queue stores subjects as read by AppleScript at processing time, so consistency is maintained within a single batch.
-- **LinkedIn job URLs** typically require authentication and will return a login wall when fetched. Note these as "fetch failed — login required" and skip. Ian can save LinkedIn postings manually using the existing JD file format.
+- **LinkedIn job URLs** typically require authentication and will return a login wall when fetched. Note these as "fetch failed — login required" and skip. The user can save LinkedIn postings manually using the existing JD file format.
 - **Queue overwrite**: Processing a new batch overwrites the queue. Run delete mode between batches to ensure all emails get cleaned up.

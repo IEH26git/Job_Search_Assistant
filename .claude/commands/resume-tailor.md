@@ -7,7 +7,7 @@ allowed-tools:
   - Bash(date:*)
 ---
 
-Tailor Ian's master resume to a specific job description.
+Tailor the user's master resume to a specific job description.
 
 ## Source Files
 
@@ -32,13 +32,13 @@ Read both:
 1. `Resume/master-resume.md`
 2. `Resume/resume-rules.md`
 
-If either file is empty or contains only placeholder comments, stop and tell Ian: "Please populate [filename] before running /resume-tailor."
+If either file is empty or contains only placeholder comments, stop and tell the user: "Please populate [filename] before running /resume-tailor."
 
 ### Step 2: Get the job description
 
 If a file path argument was provided (e.g., `Resume/JDs/acme-cos.md`), read it.
 
-If no argument was provided, ask Ian:
+If no argument was provided, ask the user:
 > "Please paste the job description, or provide the path to the JD file in Resume/JDs/."
 
 Wait for the response before proceeding.
@@ -86,6 +86,6 @@ Tell the user:
 ## Notes
 
 - Do not invent experience — only select and adapt from the master resume
-- Keep tailoring decisions transparent so Ian can review and adjust
+- Keep tailoring decisions transparent so the user can review and adjust
 - If the rules file conflicts with the JD requirements, flag it and ask
 - The Profile section text must NOT use a `* ` or `- ` bullet prefix — write it as plain text so `md-to-docx.py` renders it as body text, not a bullet

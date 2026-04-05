@@ -27,7 +27,7 @@ Run `date` to get today's date in YYYY-MM-DD format.
 
 ### Step 2: Count the prompts
 
-Count the total number of user prompts in this conversation (every message Ian sent, including this one).
+Count the total number of user prompts in this conversation (every message the user sent, including this one).
 
 ### Step 3: Write the log
 
@@ -44,7 +44,7 @@ One sentence describing what this session accomplished overall.
 
 ## Prompt 1
 
-> Verbatim text of Ian's first message
+> Verbatim text of the user's first message
 
 Claude's response or actions, described in prose. Include what was done, what was created or changed (file paths where relevant), and any key decisions made or options presented. If Claude asked a clarifying question, note that too.
 
@@ -52,7 +52,7 @@ Claude's response or actions, described in prose. Include what was done, what wa
 
 ## Prompt 2
 
-> Verbatim text of Ian's second message
+> Verbatim text of the user's second message
 
 Claude's response or actions described in prose.
 

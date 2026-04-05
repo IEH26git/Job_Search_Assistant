@@ -22,7 +22,7 @@ Convert a tailored resume Markdown file to a formatted Word document using `md-t
 
 If a file path argument was provided, use it directly. Resolve relative paths against the project root (`/Users/ianheiman/Desktop/PublicTest/`).
 
-If no argument was provided, list the `.md` files in `Resume/Tailored/` and ask Ian which one to convert.
+If no argument was provided, list the `.md` files in `Resume/Tailored/` and ask the user which one to convert.
 
 ### Step 2: Run the conversion
 

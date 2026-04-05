@@ -28,4 +28,4 @@ Run:
 
 Tell the user what files were created, their paths, and how many turns each contains (the script prints this summary).
 
-If no JSONL files were found for that date, tell Ian and suggest nearby dates to try.
+If no JSONL files were found for that date, tell the user and suggest nearby dates to try.

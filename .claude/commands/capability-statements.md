@@ -29,7 +29,7 @@ Example: `JD-CapOne-BusDir-GenAI Mgmt Strategy.md` → `JD-CapOne-BusDir-GenAI M
 
 If a file path argument was provided, read it directly.
 
-If no argument was provided, list the files in `Resume/JDs/` and ask Ian:
+If no argument was provided, list the files in `Resume/JDs/` and ask the user:
 > "Which JD would you like to process? (Provide the filename or number)"
 
 Wait for the response before proceeding.
@@ -107,4 +107,4 @@ Tell the user:
 
 - Do not invent or embellish — restate only what the JD says
 - Preserve verbatim language; the value is in mirroring the employer's words
-- These statements are a content palette — Ian will select and adapt them for resumes and cover letters, not use them as-is
+- These statements are a content palette — the user will select and adapt them for resumes and cover letters, not use them as-is

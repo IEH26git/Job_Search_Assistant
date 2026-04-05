@@ -229,7 +229,7 @@ git -C /Users/ianheiman/Desktop/PublicTest commit -m "<generated message>"
 git -C /Users/ianheiman/Desktop/PublicTest push
 ```
 
-- If `push` fails, mention it briefly so Ian is aware.
+- If `push` fails, mention it briefly so the user is aware.
 
 ### Step 12: Sign off
 
@@ -246,7 +246,7 @@ Tell the user:
 
 ### Step 13: Closing reminder
 
-Remind Ian: "You can run `/extract-transcript YYYY-MM-DD` to pull a verbatim transcript for any session back to 2026-02-13."
+Remind the user: "You can run `/extract-transcript YYYY-MM-DD` to pull a verbatim transcript for any session back to 2026-02-13."
 - "Good night."
 
 ---

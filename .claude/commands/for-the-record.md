@@ -28,7 +28,7 @@ Wait for a response before proceeding.
 Based on the content of the turns to be recorded, suggest the most appropriate folder:
 
 - **`TaskMgmt/`** — session notes, how-to discussions, workflow decisions, tool/skill documentation
-- **`REF/`** — reference material, explanations of concepts, things Ian will want to look up later
+- **`REF/`** — reference material, explanations of concepts, things the user will want to look up later
 - **`Daily Notes/`** — reflections, personal notes, things tied to a specific day's work
 - **`Content/`** — drafts, ideas for posts or writing
 
@@ -49,7 +49,7 @@ Example: `2026-03-18-context-window-and-compaction.md`
 
 Tell the user: "Suggested filename: `<filename>`. Approve or tell me a different name."
 
-Wait for confirmation before proceeding. If Ian provides an alternate name, use that exactly (add `.md` if not included).
+Wait for confirmation before proceeding. If the user provides an alternate name, use that exactly (add `.md` if not included).
 
 ### Step 5: Write the file
 
@@ -62,13 +62,13 @@ Date: YYYY-MM-DD
 
 ---
 
-**Ian:** <user message>
+**User:** <user message>
 
 **Claude:** <Claude response>
 
 ---
 
-**Ian:** <user message>
+**User:** <user message>
 
 **Claude:** <Claude response>
 

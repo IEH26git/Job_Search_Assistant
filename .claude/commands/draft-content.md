@@ -7,7 +7,7 @@ allowed-tools:
   - Bash(date:*)
 ---
 
-Generate a polished content draft for a specific platform from Ian's rough notes or a topic prompt.
+Generate a polished content draft for a specific platform from the user's rough notes or a topic prompt.
 
 ## Source Files
 
@@ -21,7 +21,7 @@ Generate a polished content draft for a specific platform from Ian's rough notes
 
 ### Step 1: Load rules
 
-Read `Templates/content-rules.md` in full. This defines Ian's positioning themes, voice, what to avoid, and platform-specific conventions.
+Read `Templates/content-rules.md` in full. This defines the user's positioning themes, voice, what to avoid, and platform-specific conventions.
 
 ### Step 2: Identify the platform and topic
 
@@ -45,8 +45,8 @@ Scan `Resume/master-resume.md` for any specific accomplishments, projects, or fa
 
 Write a single draft for the specified platform, applying:
 - The platform's length, structure, and tone conventions from content-rules.md
-- At least one of Ian's four positioning themes, expressed concretely (not as a label)
-- Ian's voice: direct, first-person, human, not boastful, concrete over abstract
+- At least one of the user's four positioning themes, expressed concretely (not as a label)
+- The user's voice: direct, first-person, human, not boastful, concrete over abstract
 
 ### Step 5: Get today's date and construct filename
 
@@ -76,6 +76,6 @@ Tell the user:
 
 ## Notes
 
-- Never invent facts or accomplishments — if a specific detail would help, surface the relevant bullet from the master resume or ask Ian for it
+- Never invent facts or accomplishments — if a specific detail would help, surface the relevant bullet from the master resume or ask the user for it
 - Apply the platform conventions strictly: LinkedIn gets hashtags, Substack does not; Blog gets structure and depth
-- If Ian wants a different angle or tone after seeing the draft, revise in the same session without re-reading the rules files
+- If the user wants a different angle or tone after seeing the draft, revise in the same session without re-reading the rules files

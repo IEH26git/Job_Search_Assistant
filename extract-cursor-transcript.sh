@@ -3,8 +3,10 @@
 
 set -euo pipefail
 
-TRANSCRIPTS_DIR="/Users/ianheiman/.cursor/projects/Users-ianheiman-Desktop-PublicTest/agent-transcripts"
-OUTPUT_DIR="/Users/ianheiman/Desktop/PublicTest/REF"
+WORKSPACE_DIR="$(cd "$(dirname "$0")" && pwd)"
+CURSOR_PROJECT="$(echo "$WORKSPACE_DIR" | sed 's|/|-|g' | sed 's|^-||')"
+TRANSCRIPTS_DIR="$HOME/.cursor/projects/$CURSOR_PROJECT/agent-transcripts"
+OUTPUT_DIR="$WORKSPACE_DIR/REF"
 
 usage() {
     echo "Usage: $0 YYYY-MM-DD"

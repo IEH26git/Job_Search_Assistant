@@ -1,10 +1,14 @@
 # Job_Search_Assistant using Claude Code
 This personal productivity/operating system is built with and runs in [Claude Code](https://claude.ai/code). That means you have amazing capabilities available to automate your daily workflow, job search activities, and content creation while you learn about other things that Claude Code can do.
 
----
-
-## What This Is
 This **system** (also known as an *"orchestrating agent"*) runs in a folder you open in Claude Code. Doing so allows you to use a structured daily workflow, with persistent memory, and a library of custom skills. 
+
+## Required for use
+- **[Claude Pro](https://claude.ai) license or higher** — required for Claude Code CLI access (sign up before installing Claude Code)
+- **[Claude Code CLI](https://claude.ai/code)** — the command-line interface this system runs on (install instructions below)
+- **Node.js 18+** — required to install Claude Code (install instructions below)
+- **Python 3** — for `/convert-resume` (resume → DOCX conversion // install instructions below)
+- **`python-docx`** — Python library (installed via setup script in a step below)
 
 ---
 
@@ -32,13 +36,6 @@ If you prefer to stay in Windows without WSL:
 2. Install **Git for Windows** from [git-scm.com](https://git-scm.com) — this also installs **Git Bash**, which you need to run `setup.sh`.
 3. Run all terminal commands in **Git Bash** (not PowerShell or cmd.exe).
 4. When installing Python dependencies (Step 3 below), use `.venv\Scripts\pip` instead of `.venv/bin/pip`.
-
-## Required for use
-- **[Claude Pro](https://claude.ai) license or higher** — required for Claude Code CLI access (sign up before installing Claude Code)
-- **[Claude Code CLI](https://claude.ai/code)** — the command-line interface this system runs on (install instructions below)
-- **Node.js 18+** — required to install Claude Code (install instructions below)
-- **Python 3** — for `/convert-resume` (resume → DOCX conversion // install instructions below)
-- **`python-docx`** — Python library (installed via setup script in a step below)
 
 ---
 

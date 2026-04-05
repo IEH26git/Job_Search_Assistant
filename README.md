@@ -156,9 +156,11 @@ Alias note: use `/extract-transcript` for Claude Code logs and `/extract-cursor-
 
 ### 7. Select your markdown editor
 AI tools use markdown files (.MD extension) **A LOT**. You don't need a markdown editor to use this system, but when you work with Claude Code, it really helps. 
-    - **Windows users:** You can open .MD files in **Notepad**. 
-    - **Mac users:** You can open .MD files in **TextEdit**.
-    - **Linux users:** You can open .MD files in any text editor (nano, vim, emacs, etc.). 
+
+- **Windows users:** You can open .MD files in **Notepad**.
+- **Mac users:** You can open .MD files in **TextEdit**.
+- **Linux users:** You can open .MD files in any text editor (nano, vim, emacs, etc.). 
+
 *If you want,* you could also find and install a markdown editor to read them. In the end, they're just text files that follow some format rendering rules. The author uses a Mac and these are his favorites: **typewriter**, **MarkEdit**, and **QOwnNotes** 
 See the 'Markdown_Editors.md' file in the REF/ folder for more information.
 
@@ -184,18 +186,22 @@ Once you're inside Claude Code, most configuration and customization tasks can b
 
 **Adapting built-in skills to your environment:**
 > "I use Gmail instead of Apple Mail. Can you rewrite `/process-job-emails` to use the Gmail API instead of AppleScript?"
+
 > "I'm on Windows and `/collect-links` uses AppleScript. Can you replace that with a version that reads emails from an `.eml` file I paste in?"
 
 **Creating new skills:**
 > "Create a new `/weekly-review` command that reads my last 5 daily notes and summarizes what I accomplished, what I didn't finish, and what to carry forward."
+
 > "Add a `/standup` command that reads today's task board and drafts a 3-bullet standup message."
 
 **Changing how existing skills behave:**
 > "Update `/draft-content` so it always writes in a more casual, first-person tone and never uses bullet points."
+
 > "Add a step to `/wrap-up` that asks me what I want to focus on tomorrow before it closes out."
 
 **Seeding and updating your context:**
 > "Read my notes from today and update my memory file with any new open threads or decisions."
+
 > "I just accepted a job offer. Update the progress log and memory to reflect that."
 
 **Remember:** Everything the agent knows and does is in plain text files you can open, read, and describe to Claude. If something doesn't fit your workflow, you don't need to figure it out yourself — just describe what you want.

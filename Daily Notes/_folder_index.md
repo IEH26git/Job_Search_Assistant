@@ -2,8 +2,10 @@
 
 _This index is updated by Claude whenever you add or remove files._
 
+Daily log files created automatically by `/start`, named `YYYY-MM-DD-Daily Log.md`.
+
 ## Files
 
 | File | Contents |
 |:-----|:---------|
-| *(example file)* | *(description)* |
+| `2026-01-01-Daily Log-SAMPLE.md` | Sample daily log — illustrates completed format; delete after creating your first real log |

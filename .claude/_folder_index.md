@@ -12,4 +12,4 @@ Claude Code configuration files for the personal operating system.
 
 | Folder | Contents |
 |:-------|:---------|
-| `commands/` | 12 `.md` skill files — each defines one slash command |
+| `commands/` | 13 `.md` skill files — each defines one slash command |

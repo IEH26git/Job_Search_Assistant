@@ -14,4 +14,4 @@ Reusable templates and rule files used by skills.
 | `Daily Note Template.md` | `/start` | Structure for daily logs |
 | `Weekly Summary Template.md` | `/wrap-up` | Structure for Friday summaries |
 | `Meeting Note Template.md` | Manual | Structure for meeting notes |
-| `Markdown Cheatsheet.md` | Reference | Markdown syntax quick reference |
+| `Markdown_Cheatsheet.md` | Reference | Markdown syntax quick reference |

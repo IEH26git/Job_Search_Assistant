@@ -222,5 +222,9 @@ Key files to personalize:
 
 ---
 
+Credit for initial baseline prompts and tutorial go to [Michael Crist](https://substack.com/home/post/p-184955320)
+
+---
+
 ## License
 MIT — use, adapt, and share freely.

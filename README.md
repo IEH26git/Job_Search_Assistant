@@ -153,6 +153,7 @@ Alias note: use `/extract-transcript` for Claude Code logs and `/extract-cursor-
 ```
 /start   →   /sync   →   /wrap-up
 ```
+See **Job-Search-Workflow.md** for more detailed descriptions of how to use this system and modify it.
 
 ### 7. Select your markdown editor
 AI tools use markdown files (.MD extension) **A LOT**. You don't need a markdown editor to use this system, but when you work with Claude Code, it really helps. 

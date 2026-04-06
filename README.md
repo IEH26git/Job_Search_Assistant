@@ -92,7 +92,7 @@ cd ..
 ```
 
 ### 4. Customize your templates
-Before launching Claude Code for the first time, fill in a few files so the agent has context about you:
+Before launching Claude Code for the first time, fill in a few files (open these in any text editor application) so the agent has context about you:
 
 | File | What to add |
 |:-----|:-----------|
@@ -175,11 +175,11 @@ These are one-time setup steps that happen outside the agent:
 
 | Task | How |
 |:-----|:----|
-| Clone the repo | `git clone ...` in your terminal |
-| Run `setup.sh` | `./setup.sh` in your terminal, before opening Claude Code |
-| Fill in `.claude/memory.md` | Open the file in any text editor; add your current focus and open threads |
-| Fill in `Resume/master-resume.md` | Paste in your work history and skills |
-| Fill in `Templates/Role_Search_Criteria.md` | Add target roles, keywords, and deal-breakers |
+| Clone the repo | Enter `git clone ...` in your terminal |
+| Run `setup.sh` | Enter `./setup.sh` in your terminal, before opening Claude Code |
+| Fill in `.claude/memory.md` | Open and edit the file in any text editor; add your current focus and open threads |
+| Fill in `Resume/master-resume.md` | Open and edit the file in any text editor; paste in your work history and skills |
+| Fill in `Templates/Role_Search_Criteria.md` | Open and edit the file in any text editor; add target roles, keywords, and deal-breakers |
 | Open Claude Code | `claude` in your terminal from the repo folder |
 
 ### What to Ask Claude to Do
@@ -210,7 +210,7 @@ Once you're inside Claude Code, most configuration and customization tasks can b
 ---
 
 ## Customization
-Key files to personalize:
+Key files to personalize (open and edit .md files in any text editor):
 
 | File | What to customize |
 |:-----|:-----------------|

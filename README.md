@@ -14,12 +14,11 @@ This **system** (also known as an *"orchestrating agent"*) runs in a folder you 
 
 ## Before you begin setup
 
-### Options for use
-- **macOS + Apple Mail** — used by `/process-job-emails` and `/collect-links` as shipped.
-   - If you're on a different platform or email client, ask Claude to adapt those skills to your environment (see **[What to Ask Claude to Do]**(#what-to-ask-claude-to-do))
-   
-- **Windows users** — choose one of the following paths (you don't need both)
-  
+### **macOS + Apple Mail Users** 
+Everything in this repo works as shipped.
+
+### **Windows + other email Users** — choose _one_ of the following paths (you don't need both)
+
 **Path A: WSL** *(Recommended)*
 Installing WSL gives you a full Linux environment inside Windows. Do this:
 1. Open **PowerShell as Administrator** and run:

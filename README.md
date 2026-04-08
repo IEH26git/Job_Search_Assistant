@@ -1,4 +1,4 @@
-# Job_Search_Assistant using Claude Code
+# Job_Search_Assistant
 This personal productivity/operating system is built with and runs in [Claude Code](https://claude.ai/code). That means you have amazing capabilities available to automate your daily workflow, job search activities, and content creation while you learn about other things that Claude Code can do.
 
 This **system** (also known as an *"orchestrating agent"*) runs in a folder you open in Claude Code. Doing so allows you to use a structured daily workflow, with persistent memory, and a library of custom skills. 

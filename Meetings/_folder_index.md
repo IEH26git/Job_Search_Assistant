@@ -1,6 +1,6 @@
 # Folder Index — Meetings/
 
-_This index is updated by Claude whenever you add or remove files._
+_This index is updated by Claude whenever the agent adds or removes files._
 
 Meeting notes for recruiter calls, interviews, and networking conversations. Processed by `/sync`.
 

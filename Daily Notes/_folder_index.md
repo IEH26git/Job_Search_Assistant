@@ -1,6 +1,6 @@
 # Folder Index — Daily Notes/
 
-_This index is updated by Claude whenever you add or remove files._
+_This index is updated by Claude whenever the agent adds or removes files._
 
 Daily log files created automatically by `/start`, named `YYYY-MM-DD-Daily Log.md`.
 

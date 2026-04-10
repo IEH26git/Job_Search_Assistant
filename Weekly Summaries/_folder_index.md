@@ -1,6 +1,6 @@
 # Folder Index — Weekly Summaries/
 
-_This index is updated by Claude whenever you add or remove files._
+_This index is updated by Claude whenever the agent adds or removes files._
 
 Weekly summary files generated automatically by `/wrap-up` on Fridays, named `Week of YYYY-MM-DD.md`.
 

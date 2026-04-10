@@ -3,7 +3,36 @@ This personal productivity/operating system is built with and runs in [Claude Co
 
 This **system** (also known as an *"orchestrating agent"*) runs in a folder you open in Claude Code. Doing so allows you to use a structured daily workflow, with persistent memory, and a library of custom skills. 
 
-## Required for use
+*See **[Job-Search-Workflow.md](Job-Search-Workflow.md)** for "Everything You Can Do With This Agent"*
+1. Overview
+2. Daily Rhythm
+2.1 /start - Morning Startup
+2.2 /sync — Midday Refresh
+2.3 /wrap-up - End of Day
+3. Job Search - Sourcing
+3.1 From Email Digests
+3.2 Collecting Links for Later Review
+3.3 Manual Capture
+4. Job Search - Evaluation
+5. Job Search - Applying
+5.1 Resume Tailoring
+5.2 Capability Statements
+5.3 Cover Letters
+6. Job Search - Meetings & Conversations
+7. Job Search - Follow-Up Tracking
+8. Job Search - Interview Preparation & Debrief
+9. Content & Outreach
+9.1 Drafting Content
+9.2 Outreach Messages
+10. Session Utilities
+10.1 /log-session
+10.2 /extract-transcript
+10.3 /extract-cursor-transcript
+10.4 /for-the-record
+11. Reference Files
+12. Beyond This Agent → Building Your Own
+
+## Required tools for using this agent
 - **[Claude Pro](https://claude.ai) license or higher** — required for Claude Code CLI access (sign up before installing Claude Code)
 - **[Claude Code CLI](https://claude.ai/code)** — the command-line interface this system runs on (install instructions below)
 - **Node.js 18+** — required to install Claude Code (install instructions below)
@@ -14,11 +43,10 @@ This **system** (also known as an *"orchestrating agent"*) runs in a folder you 
 
 ## Before you begin setup
 
-### Options for use
-- **macOS + Apple Mail** — used by `/process-job-emails` and `/collect-links` as shipped.
-   - If you're on a different platform or email client, ask Claude to adapt those skills to your environment (see **[What to Ask Claude to Do]**(#what-to-ask-claude-to-do))
-   
-- **Windows users** — choose one of the following paths (you don't need both)
+### **macOS + Apple Mail Users** 
+Everything in this repo works as shipped.
+
+### **Windows + other email Users** — choose _one_ of the following paths (you don't need both)
   
 **Path A: WSL** *(Recommended)*
 Installing WSL gives you a full Linux environment inside Windows. Do this:
@@ -153,7 +181,8 @@ Alias note: use `/extract-transcript` for Claude Code logs and `/extract-cursor-
 ```
 /start   →   /sync   →   /wrap-up
 ```
-See **Job-Search-Workflow.md** for detailed instructions on how to use this system and modify it. See **Agent-Change-Log.md** for a history of how features have been added and evolved.
+See **Job-Search-Workflow.md** for detailed instructions on how to use this system and modify it. 
+See **Agent-Change-Log.md** for a history of how features have been added and evolved.
 
 ### 7. Select your markdown editor
 AI tools use markdown files (.MD extension) **A LOT**. You don't need a markdown editor to use this system, but when you work with Claude Code, it really helps. 

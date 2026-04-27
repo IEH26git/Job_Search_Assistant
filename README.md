@@ -101,6 +101,14 @@ These are the folders created in your chosen main/root folder.
 └── Job-Search-Workflow.md  # End-to-end workflow documentation
 ```
 
+##### FYI - Recent Updates
+**Skills installed 2026-04-27:**                                                               
+  - `adapt-skill.md` — adapts a skill file from another Claude Code agent for use in this agent; identifies project-specific references, rewrites
+  paths and scope, writes to target agent's `.claude/commands/`, deletes source                                                                     
+  - `create-change-log.md` — bootstraps `Agent-Change-Log.md` from scratch by compiling full git history into ASCII timeline + detailed entries
+  - `update-change-log.md` — appends new entries to `Agent-Change-Log.md` from git log since last entry                                             
+  - `git-commit-push.md` — stages all changes, generates a summary commit message from the diff, commits, and pushes
+
 ### 2. Run the setup script
 **Enter the following commands in your terminal before opening Claude Code:** 
 ```bash

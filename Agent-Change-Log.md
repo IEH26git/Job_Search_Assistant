@@ -47,6 +47,14 @@ A chronological record of all changes to the personal operating system — skill
   │                                          └─ 04/04  Deployment docs + setup improvements
   │                                                    (README overhaul, setup.sh Linux fix,
   │                                                     SAMPLE file headers, notes.sqlite removed)
+  ──────────────────────────────────────────────────────────────────
+  Apr  5  ●  Public release prep (LICENSE, CONTRIBUTING, README)
+  ──────────────────────────────────────────────────────────────────
+  Apr 10  ●  Workflow doc expansion + README reorganization
+  ──────────────────────────────────────────────────────────────────
+  Apr 27  ★  Dynamic path migration + 4 new skills added
+          ·  All skills: hardcoded paths replaced with $PWD
+          ·  New: /adapt-skill, /create-change-log, /update-change-log, /git-commit-push
 ```
 
 ---
@@ -192,6 +200,47 @@ A chronological record of all changes to the personal operating system — skill
 - **`setup.sh`**: Fixed `sed -i ''` (macOS-only syntax) — now detects OS and uses `sed -i` on Linux
 - **SAMPLE files**: Added instructional header to all six SAMPLE files identifying which template or skill each is based on and when to delete it
 - **`notes.sqlite`**: Removed personal data file from repo root (was untracked)
+
+---
+
+### 2026-04-05 — Public Release Prep
+
+**Type:** Infrastructure + Documentation
+**Scope:** `LICENSE`, `CONTRIBUTING.md`, `README.md`, `setup.sh`
+
+**Infrastructure**
+- `LICENSE` — added MIT license file
+- `CONTRIBUTING.md` — added contributing guidelines for public repo
+- `README.md` — multiple rounds of updates preparing for public release; added TOC, reorganized platform sections, expanded Windows instructions
+
+---
+
+### 2026-04-10 — Workflow Doc Expansion + Folder Index Audit
+
+**Type:** Documentation + Infrastructure
+**Scope:** `Job-Search-Workflow.md`, `REF/`, folder indexes
+
+**Documentation**
+- `Job-Search-Workflow.md` — expanded to full agent reference doc covering end-to-end workflow
+- `REF/Job-Search-Workflow-old.md` — archived previous version
+- Removed `Job-Search-Workflow-v1.md` (superseded)
+- Updated `_folder_index.md` files across multiple folders to reflect current state
+
+---
+
+### 2026-04-27 — Dynamic Path Migration + New Skills
+
+**Type:** Skills Updated + New Skills
+**Scope:** All `.claude/commands/*.md` skills, `.claude/commands/_folder_index.md`
+
+**Skills updated**
+- All 13 existing skills (`start`, `sync`, `wrap-up`, `process-job-emails`, `collect-links`, `resume-tailor`, `capability-statements`, `convert-resume`, `draft-content`, `log-session`, `extract-transcript`, `extract-cursor-transcript`, `for-the-record`) — replaced all hardcoded absolute paths with `$PWD` for dynamic path derivation; no personally identifiable paths remain in any skill file
+
+**Skills installed**
+- `adapt-skill.md` — adapts a skill file from another Claude Code agent for use in this agent; identifies project-specific references, rewrites paths and scope, writes to target agent's `.claude/commands/`, deletes source
+- `create-change-log.md` — bootstraps `Agent-Change-Log.md` from scratch by compiling full git history into ASCII timeline + detailed entries
+- `update-change-log.md` — appends new entries to `Agent-Change-Log.md` from git log since last entry
+- `git-commit-push.md` — stages all changes, generates a summary commit message from the diff, commits, and pushes
 
 ---
 

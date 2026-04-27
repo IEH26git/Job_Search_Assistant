@@ -1,6 +1,6 @@
 ---
 name: update-change-log
-description: Summarize recent changes and append them to admin/Agent-Change-Log.md in the established format
+description: Summarize recent changes and append them to Agent-Change-Log.md in the established format
 argument-hint: ""
 allowed-tools:
   - Read
@@ -12,7 +12,7 @@ allowed-tools:
 
 ---
 
-Summarize what has changed since the last change log entry and append it to `admin/Agent-Change-Log.md`.
+Summarize what has changed since the last change log entry and append it to `Agent-Change-Log.md`.
 
 ## Steps
 
@@ -22,7 +22,7 @@ Run `date` and format as `YYYY-MM-DD`. Also format the short form used in the ti
 
 ### Step 2: Read the change log
 
-Read `admin/Agent-Change-Log.md` in full. Identify:
+Read `Agent-Change-Log.md` in full. Identify:
 - The date of the most recent entry (appears as `### YYYY-MM-DD` at the bottom of the Detailed Change Log section)
 - The exact last line before `*This file is updated by…*` so you can anchor your append point
 
@@ -32,7 +32,7 @@ Run `git log --oneline --since="<last-log-date>"` to find commits since the last
 
 Then check for new or modified files in these areas:
 - `.claude/commands/` — new or updated skills
-- `admin/` — new admin files
+- `Agent-Change-Log.md` — the change log itself
 - `CLAUDE.md` — any behavioral rule changes
 - `Templates/` — new or updated templates
 - `Resume/` — resume automation files
@@ -51,7 +51,7 @@ Group the changes into one or more of these categories (use only the ones that a
 | **Skills installed** | New `.claude/commands/*.md` files |
 | **Skills updated** | Existing skill files with substantive changes |
 | **CLAUDE.md updated** | Behavioral rule additions or changes |
-| **Admin files updated** | Changes to `admin/` files |
+| **Change log updated** | Changes to `Agent-Change-Log.md` |
 | **Infrastructure** | Git setup, permissions settings, folder structure |
 | **Bug fix** | Defect corrections in skills or scripts |
 | **Documentation** | New or updated templates, workflow docs |
@@ -82,7 +82,7 @@ If multiple items share the same date, list them on separate lines with 10-space
 
 ### Step 6: Draft the Detailed Change Log section
 
-Format each entry under a `### YYYY-MM-DD` header with `**Type:**` and `**Scope:**` fields followed by bullet points. Use bold category labels followed by bullet points. Keep descriptions factual and specific — include filenames, key findings, and produced artifacts. Mirror the style of existing entries in `admin/Agent-Change-Log.md` closely.
+Format each entry under a `### YYYY-MM-DD` header with `**Type:**` and `**Scope:**` fields followed by bullet points. Use bold category labels followed by bullet points. Keep descriptions factual and specific — include filenames, key findings, and produced artifacts. Mirror the style of existing entries in `Agent-Change-Log.md` closely.
 
 ### Step 7: Present the draft to the user
 
@@ -105,4 +105,4 @@ Use Edit to insert the new `### YYYY-MM-DD` section immediately before the `*Thi
 Tell the user:
 - The date entry added
 - How many categories were logged
-- File updated: `admin/Agent-Change-Log.md`
+- File updated: `Agent-Change-Log.md`

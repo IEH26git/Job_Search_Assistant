@@ -10,9 +10,9 @@ Convert a tailored resume Markdown file to a formatted Word document using `md-t
 
 ## Source Files
 
-- **Script**: `/Users/ianheiman/Desktop/PublicTest/Resume/md-to-docx.py`
-- **Python**: `/Users/ianheiman/Desktop/PublicTest/Resume/.venv/bin/python`
-- **Tailored folder**: `/Users/ianheiman/Desktop/PublicTest/Resume/Tailored/`
+- **Script**: `$PWD/Resume/md-to-docx.py`
+- **Python**: `$PWD/Resume/.venv/bin/python`
+- **Tailored folder**: `$PWD/Resume/Tailored/`
 
 ---
 
@@ -20,7 +20,7 @@ Convert a tailored resume Markdown file to a formatted Word document using `md-t
 
 ### Step 1: Get the file path
 
-If a file path argument was provided, use it directly. Resolve relative paths against the project root (`/Users/ianheiman/Desktop/PublicTest/`).
+If a file path argument was provided, use it directly. Resolve relative paths against the project root (`$PWD/`).
 
 If no argument was provided, list the `.md` files in `Resume/Tailored/` and ask the user which one to convert.
 
@@ -29,8 +29,8 @@ If no argument was provided, list the `.md` files in `Resume/Tailored/` and ask 
 Run:
 
 ```
-/Users/ianheiman/Desktop/PublicTest/Resume/.venv/bin/python \
-  /Users/ianheiman/Desktop/PublicTest/Resume/md-to-docx.py \
+$PWD/Resume/.venv/bin/python \
+  $PWD/Resume/md-to-docx.py \
   "<absolute path to .md file>"
 ```
 

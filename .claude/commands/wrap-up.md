@@ -17,14 +17,14 @@ End of day wrap-up. Syncs memory, clears completed tasks, and preps for tomorrow
 
 ## Source Files
 
-- **Memory**: `/Users/ianheiman/Desktop/PublicTest/.claude/memory.md`
-- **Daily Log**: `/Users/ianheiman/Desktop/PublicTest/Daily Notes/YYYY-MM-DD-Daily Log.md`
-- **Task Board**: `/Users/ianheiman/Desktop/PublicTest/Task Board.md`
-- **Scratchpad**: `/Users/ianheiman/Desktop/PublicTest/Scratchpad.md`
-- **Meetings Folder**: `/Users/ianheiman/Desktop/PublicTest/Meetings/`
-- **Weekly Summary Template**: `/Users/ianheiman/Desktop/PublicTest/Templates/Weekly Summary Template.md`
-- **Weekly Summaries Folder**: `/Users/ianheiman/Desktop/PublicTest/Weekly Summaries/`
-- **Progress Log**: `/Users/ianheiman/Desktop/PublicTest/Progress Log.md`
+- **Memory**: `$PWD/.claude/memory.md`
+- **Daily Log**: `$PWD/Daily Notes/YYYY-MM-DD-Daily Log.md`
+- **Task Board**: `$PWD/Task Board.md`
+- **Scratchpad**: `$PWD/Scratchpad.md`
+- **Meetings Folder**: `$PWD/Meetings/`
+- **Weekly Summary Template**: `$PWD/Templates/Weekly Summary Template.md`
+- **Weekly Summaries Folder**: `$PWD/Weekly Summaries/`
+- **Progress Log**: `$PWD/Progress Log.md`
 
 ---
 
@@ -177,12 +177,12 @@ If yes, mention: "Tomorrow: keep an eye on [X]"
 
 1. Stage all changes:
 ```bash
-git -C /Users/ianheiman/Desktop/PublicTest add .
+git -C $PWD add .
 ```
 
 2. Generate a summary of what changed:
 ```bash
-git -C /Users/ianheiman/Desktop/PublicTest diff --staged --name-status
+git -C $PWD diff --staged --name-status
 ```
 
 3. Check for system file changes. A system file is any staged path matching:
@@ -192,7 +192,7 @@ git -C /Users/ianheiman/Desktop/PublicTest diff --staged --name-status
    - `*.sh` (shell scripts)
 
    If any system files appear in the staged diff:
-   - Read `/Users/ianheiman/Desktop/PublicTest/Agent-Change-Log.md`
+   - Read `$PWD/Agent-Change-Log.md`
    - Append a new dated entry to the **bottom** of the Detailed Change Log section, using this format:
 
    ```markdown
@@ -225,8 +225,8 @@ Rules for the summary suffix:
 
 3. Commit and push:
 ```bash
-git -C /Users/ianheiman/Desktop/PublicTest commit -m "<generated message>"
-git -C /Users/ianheiman/Desktop/PublicTest push
+git -C $PWD commit -m "<generated message>"
+git -C $PWD push
 ```
 
 - If `push` fails, mention it briefly so the user is aware.

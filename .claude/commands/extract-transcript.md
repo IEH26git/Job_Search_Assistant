@@ -3,7 +3,7 @@ description: Generate a verbatim conversation log for a past Claude Code session
 argument-hint: "<date> (e.g., 2026-02-18)"
 allowed-tools:
   - Bash(date:*)
-  - Bash(/Users/ianheiman/Desktop/PublicTest/extract-transcript.sh:*)
+  - Bash($PWD/extract-transcript.sh:*)
 ---
 
 Generate a verbatim conversation log for a past Claude Code session by date.
@@ -21,7 +21,7 @@ If no argument was provided, run `date` to get today's date and use that.
 Run:
 
 ```
-/Users/ianheiman/Desktop/PublicTest/extract-transcript.sh <date>
+$PWD/extract-transcript.sh <date>
 ```
 
 ### Step 3: Report

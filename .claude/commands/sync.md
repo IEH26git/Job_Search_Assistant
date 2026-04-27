@@ -13,11 +13,11 @@ Sync memory with current daily log and process any new meeting transcripts. Use 
 
 ## Source Files
 
-- **Memory**: `/Users/ianheiman/Desktop/PublicTest/.claude/memory.md`
-- **Daily Log**: `/Users/ianheiman/Desktop/PublicTest/Daily Notes/YYYY-MM-DD-Daily Log.md`
-- **Meetings Folder**: `/Users/ianheiman/Desktop/PublicTest/Meetings/`
-- **Scratchpad**: `/Users/ianheiman/Desktop/PublicTest/Scratchpad.md`
-- **Priorities Reference**: `/Users/ianheiman/Desktop/PublicTest/Templates/job-search-priorities.md`
+- **Memory**: `$PWD/.claude/memory.md`
+- **Daily Log**: `$PWD/Daily Notes/YYYY-MM-DD-Daily Log.md`
+- **Meetings Folder**: `$PWD/Meetings/`
+- **Scratchpad**: `$PWD/Scratchpad.md`
+- **Priorities Reference**: `$PWD/Templates/job-search-priorities.md`
 
 ---
 

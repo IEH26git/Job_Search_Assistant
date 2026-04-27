@@ -11,9 +11,9 @@ Generate a polished content draft for a specific platform from the user's rough 
 
 ## Source Files
 
-- **Content Rules**: `/Users/ianheiman/Desktop/PublicTest/Templates/content-rules.md`
-- **Master Resume**: `/Users/ianheiman/Desktop/PublicTest/Resume/master-resume.md`
-- **Output Folder**: `/Users/ianheiman/Desktop/PublicTest/Content/`
+- **Content Rules**: `$PWD/Templates/content-rules.md`
+- **Master Resume**: `$PWD/Resume/master-resume.md`
+- **Output Folder**: `$PWD/Content/`
 
 ---
 
@@ -61,7 +61,7 @@ Output filename: `YYYY-MM-DD-[platform]-[slug].md`
 ### Step 6: Save and display
 
 Write the draft to:
-`/Users/ianheiman/Desktop/PublicTest/Content/<filename>.md`
+`$PWD/Content/<filename>.md`
 
 Display the full draft inline for review.
 

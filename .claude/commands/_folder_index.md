@@ -19,3 +19,7 @@ Skill definition files for all Claude Code slash commands.
 | `extract-transcript.md` | `/extract-transcript [date]` | Generate verbatim transcript |
 | `extract-cursor-transcript.md` | `/extract-cursor-transcript [date]` | Generate Cursor verbatim transcript |
 | `for-the-record.md` | `/for-the-record` | Save conversation turns to file |
+| `adapt-skill.md` | `/adapt-skill [path]` | Adapt a skill from another project to this agent |
+| `create-change-log.md` | `/create-change-log` | Create admin/Agent-Change-Log.md from scratch |
+| `update-change-log.md` | `/update-change-log` | Append recent changes to admin/Agent-Change-Log.md |
+| `git-commit-push.md` | `/git-commit-push [message]` | Stage all changes, commit with summary message, and push |

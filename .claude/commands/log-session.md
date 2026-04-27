@@ -11,7 +11,7 @@ Generate a session log for the current conversation and save it to the TaskMgmt 
 
 ## Output Location
 
-`/Users/ianheiman/Desktop/PublicTest/TaskMgmt/YYYY-MM-DD.md`
+`$PWD/TaskMgmt/YYYY-MM-DD.md`
 
 If a slug argument is provided, use `YYYY-MM-DD-<slug>.md` instead (e.g., `resume-agent` → `2026-02-18-resume-agent.md`).
 

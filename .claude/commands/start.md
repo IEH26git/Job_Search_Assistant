@@ -14,11 +14,11 @@ Start the work day. Loads context and gets ready to work.
 
 ## Source Files
 
-- **Memory File**: `/Users/ianheiman/Desktop/PublicTest/.claude/memory.md`
-- **Daily Note Template**: `/Users/ianheiman/Desktop/PublicTest/Templates/Daily Note Template.md`
-- **Task Board**: `/Users/ianheiman/Desktop/PublicTest/Task Board.md`
-- **Daily Notes Folder**: `/Users/ianheiman/Desktop/PublicTest/Daily Notes/`
-- **Priorities Reference**: `/Users/ianheiman/Desktop/PublicTest/Templates/job-search-priorities.md`
+- **Memory File**: `$PWD/.claude/memory.md`
+- **Daily Note Template**: `$PWD/Templates/Daily Note Template.md`
+- **Task Board**: `$PWD/Task Board.md`
+- **Daily Notes Folder**: `$PWD/Daily Notes/`
+- **Priorities Reference**: `$PWD/Templates/job-search-priorities.md`
 
 ---
 

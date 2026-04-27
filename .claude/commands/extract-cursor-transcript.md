@@ -3,7 +3,7 @@ description: Generate a verbatim conversation log for a past Cursor agent sessio
 argument-hint: "<date> (e.g., 2026-03-24)"
 allowed-tools:
   - Bash(date:*)
-  - Bash(/Users/ianheiman/Desktop/PublicTest/extract-cursor-transcript.sh:*)
+  - Bash($PWD/extract-cursor-transcript.sh:*)
 ---
 
 Generate a verbatim conversation log for a past Cursor agent session by date.
@@ -21,7 +21,7 @@ If no argument was provided, run `date` to get today's date and use that.
 Run:
 
 ```
-/Users/ianheiman/Desktop/PublicTest/extract-cursor-transcript.sh <date>
+$PWD/extract-cursor-transcript.sh <date>
 ```
 
 ### Step 3: Report

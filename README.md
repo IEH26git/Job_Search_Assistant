@@ -3,32 +3,17 @@ This personal productivity/operating system is built with and runs in [Claude Co
 
 This **system** (also known as an *"orchestrating agent"*) runs in a folder you open in Claude Code. Doing so allows you to use a structured daily workflow, with persistent memory, and a library of custom skills. 
 
-*See **[Job-Search-Workflow.md](Job-Search-Workflow.md)** for "Everything You Can Do With This Agent"*  
+## [Everything You Can Do With This Agent](Job-Search-Workflow.md)
 1. Overview
-2. Daily Rhythm  
-2.1 /start - Morning Startup  
-2.2 /sync — Midday Refresh  
-2.3 /wrap-up - End of Day  
-3. Job Search - Sourcing  
-3.1 From Email Digests  
-3.2 Collecting Links for Later Review  
-3.3 Manual Capture  
+2. Daily Rhythm    
+3. Job Search - Sourcing 
 4. Job Search - Evaluation  
-5. Job Search - Applying  
-5.1 Resume Tailoring  
-5.2 Capability Statements  
-5.3 Cover Letters  
+5. Job Search - Applying
 6. Job Search - Meetings & Conversations  
 7. Job Search - Follow-Up Tracking  
 8. Job Search - Interview Preparation & Debrief  
 9. Content & Outreach  
-9.1 Drafting Content  
-9.2 Outreach Messages  
 10. Session Utilities  
-10.1 /log-session  
-10.2 /extract-transcript  
-10.3 /extract-cursor-transcript  
-10.4 /for-the-record  
 11. Reference Files  
 12. Beyond This Agent → Building Your Own  
 

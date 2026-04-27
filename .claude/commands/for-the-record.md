@@ -1,4 +1,5 @@
 ---
+name: for-the-record
 description: Record a portion of the current conversation to a .md file for future reference
 argument-hint: ""
 allowed-tools:
@@ -75,11 +76,11 @@ Date: YYYY-MM-DD
 ---
 ```
 
-Include exactly the number of turns confirmed in Step 2, starting from the most recent and going back. Preserve the full text of each message — do not summarize or truncate.
+Include exactly the number of turns confirmed in Step 2. **Anchor point:** the most recent turn is the one immediately before the `/for-the-record` invocation — do not count the invocation itself or any exchanges within it. Count backwards from that anchor. Preserve the full text of each message — do not summarize or truncate.
 
 ### Step 6: Update the folder index
 
-Read `<folder>/_folder_index.md` and add an entry for the new file.
+If `<folder>/_folder_index.md` exists, read it and add an entry for the new file. Otherwise, skip this step.
 
 ### Step 7: Confirm
 
